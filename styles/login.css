@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+
+body {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1536311312982-31ed42ebc0f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.card-fill {
+  position: absolute;
+  inset: 0;
+  background: #f5f5f5;
+  border-radius: 25px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.login-panel,
+.highlight {
+  position: relative;
+  z-index: 1;
+}
+
+.login-panel {
+  display: grid;
+  padding: 20px 30px;
+  margin: auto;
+  gap: 100px;
+}
+
+.login-panel h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  margin-bottom: 8px;
+}
+
+.login-panel p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.brand-logo {
+  width: 100px;
+  margin: auto;
+  filter: grayscale(100%);
+}
+
+form {
+  display: grid;
+  font-size: 0.7rem;
+  margin-top: 16px;
+}
+form label {
+  font-weight: 500;
+  margin: 16px 0 8px;
+}
+form input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #ececec;
+  color: #555;
+  transition: 0.3s ease;
+}
+
+form input:hover {
+  background-color: #c9c9c9;
+}
+
+.forgot-password {
+  font-size: 0.7rem;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 6px;
+}
+
+button[type="submit"] {
+  margin-top: 32px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 9px 13px;
+  background: #000;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  color: black;
+  background-color: white;
+}
+
+.highlight {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  color: white;
+  padding: 30px 140px 30px 30px;
+  border-radius: 20px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  /*   box-shadow: inset 0 0 0 1px rgba(255,255,255,.3); */
+}
+
+.highlight h2 {
+  font-size: 52px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.highlight p {
+  font-weight: 200;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+}
+
+.highlight-tag {
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  letter-spacing: 2px;
+}

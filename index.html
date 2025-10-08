@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login • Student Portal</title>
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+<body class="login">
+  <div class="container">
+  <div class="card-fill" aria-hidden="true"></div>
+
+  <article class="highlight">
+    <p class="highlight-tag"> a tag name</p>
+    <span>
+      <h2>A title <br>with a fancy font choice</h2>
+      <p>A subtitle to the statement, which could wrap over multiple lines if you needed it to.</p>
+    </span>
+  </article>
+
+  <main class="login-panel">
+    <img class="brand-logo" src="https://www.aim.com.au/sites/default/files/AIM-Business-School-Logo_1.png" alt="AIM Business School">
+    <section>
+      <h1>Welcome Back</h1>
+      <p>Enter your email and password to continue</p>
+      <form action="dashboard.html">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+
+        <a href="#" class="forgot-password">Forgot password</a>
+
+      </form>
+    </section>
+    <p>Not a student? <a href="#">Sign Up</a></p>
+  </main>
+</div>
+
+  <script src="scripts/login-mask.js"></script>
+</body>
+</html>
